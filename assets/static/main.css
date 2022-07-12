@@ -311,6 +311,14 @@ figure > img{
 }
 .intro-row{
   max-width: fit-content;
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.languages-img{
+  width: 115px;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
