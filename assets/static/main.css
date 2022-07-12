@@ -297,6 +297,7 @@ figure > img{
   max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 140px;
 }
 .languages__intro{
   margin-left: auto;
@@ -329,7 +330,7 @@ figure > img{
   box-shadow: 0 0 0 3px #4c9bd6;
 }
 .languages-btn{
-  
+  margin-top: 40px;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
