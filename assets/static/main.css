@@ -114,7 +114,7 @@ section {
   width: 58px;
   float: left;
   margin-top: -7px;
-  margin-left: -6px;
+  margin-left: -66px;
 }
 
 /*=============== NAV Bar ===============*/
@@ -249,6 +249,9 @@ figure > img{
 }
 .introduction__col{
   width: 33.33%;
+  text-align: left;
+  padding-left: 64px;
+  padding-right: 48px;
 }
 .introduction__h3{
   font-size: 26px;
