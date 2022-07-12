@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -107,6 +107,7 @@ img {
   background-color: white;
   z-index: var(--z-fixed);
   transition: .4s;
+  
 }
 .nav{
   padding: 14px;
@@ -123,7 +124,7 @@ img {
   width: 122px;
 }
 .nav__img{
-  width: 180px;
+  width: 280px;
 }
 .nav__list{
   display: inline-flex;
@@ -140,11 +141,45 @@ img {
 
 
 /*=============== Title ===============*/
+.title{
+  text-align: center;
+  background-image: url(/assets/img/title.png);
+}
+.title__container{
+  width: 100%;
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .title__h1{
   margin-top: 2rem;
+  display: block;
+  line-height: 3.5rem;
+  font-size: 60px;
+  font-weight: 900;
 }
 .title__span{
-  
+  font-size: 36px;
+  font-weight: 400;
+  width: 100%;
+  display: block;
+}
+.intro{
+  margin: 24px auto;
+  line-height: 28px;
+  font-size: 21px;
+}
+.title__button{
+  height: 44px;
+  padding: 10px 16px;
+  background-color: #3c8ac6;
+  color: white;
+  border-radius: .3rem;
+  font-size: 18px;
+  font-weight: 500;
 }
 section {
   position: relative;
