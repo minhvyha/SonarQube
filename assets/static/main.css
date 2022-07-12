@@ -230,7 +230,7 @@ figure > img{
   max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
-  
+  margin-bottom: 140px;
 }
 .introduction__title{
   max-width: 670px;
@@ -257,6 +257,60 @@ figure > img{
   font-size: 26px;
   line-height: 32px;
   margin-bottom: 16px;
+}
+.btn-nav{
+  color: #4c9bd6;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: none !important;
+  padding: 10px;
+  margin: -10px;
+  font-size: 18px;
+  line-height: 26px;
+}
+.btn-nav:after{
+  content: " ";
+    background-image: url(https://www.sonarqube.org/images/ui/arrows.svg);
+    background-position: 4px -2px;
+    padding-right: 34px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+.spacer-top-xs{
+  margin-top: 10px;
+}
+.introduction__p{
+  font-size: 18px;
+  line-height: 26px;
+}
+.row.introduction{
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/*=============== LANGUAGES ===============*/
+
+.languages{
+  padding: 0px 20px;
+  padding-top: 20px;
+  text-align: center;
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.languages__intro{
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 36px;
+}
+.intro-text{
+  max-width: 920px;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 24px auto;
+}
+.intro-row{
+  max-width: fit-content;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
