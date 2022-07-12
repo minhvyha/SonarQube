@@ -97,6 +97,24 @@ img {
   height: auto;
 }
 
+/*=============== NAV Bar ===============*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--body-color);
+  z-index: var(--z-fixed);
+  transition: .4s;
+}
+.nav__logo{
+  padding: 6px 0;
+  height: 48px;
+  width: 122px;
+}
+.nav__img{
+  width: 100px;
+}
 
 
 section {
