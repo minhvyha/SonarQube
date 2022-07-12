@@ -103,9 +103,14 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: var(--body-color);
+  background-color: white;
   z-index: var(--z-fixed);
   transition: .4s;
+}
+.nav{
+  padding: 14px;
+  display: flex;
+  align-items: center;
 }
 .nav__logo{
   padding: 6px 0;
@@ -113,7 +118,14 @@ img {
   width: 122px;
 }
 .nav__img{
-  width: 100px;
+  width: 120px;
+}
+.nav__list{
+  display: inline-flex;
+  padding-left: 24px;
+}
+.nav__item{
+  padding: 16px;
 }
 
 
