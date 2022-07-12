@@ -71,7 +71,11 @@ html {
   scroll-behavior: smooth;
 }
 
-
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
 body {
   background-color: white;
   overflow-x: hidden;
@@ -96,6 +100,21 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  padding-top: 100px;
+  height: fit-content;
+}
+.icon{
+  width: 58px;
+  float: left;
+  margin-top: -7px;
+  margin-left: -6px;
 }
 
 /*=============== NAV Bar ===============*/
@@ -144,6 +163,9 @@ img {
 .title{
   text-align: center;
   background-image: url(/assets/img/title.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .title__container{
   width: 100%;
@@ -181,46 +203,57 @@ img {
   font-size: 18px;
   font-weight: 500;
 }
-section {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 400px;
-  padding-top: 100px;
-  background: #f5f8fc;
-  height: 100vh;
+
+figure > img{
+  width: 90%;
+}
+.nav__download{
+  margin-right: left;
+}
+.nav a:last-child{
+  margin-left: auto;
+}
+.nav__download{
+  padding: 5.5px 12px;
+  background-color: #3c8ac6;
+  color: white;
+  border-radius: .15rem;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.curve {
-  position: absolute;
-  height: 250px;
-  width: 100%;
-  bottom: 0;
+/*=============== INTRODUCTION ===============*/
+.introduction{
+  padding: 0px 20px;
+  padding-top: 20px;
+  text-align: center;
+  max-width: 1220px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.introduction__title{
+  max-width: 670px;
+  font-size: 36px;
+  line-height: 45px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
-
-.curve::before {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  transform: translate(85%, 60%);
-  background-color: white;
+.introduction__text{
+  max-width: 680px;
+  text-align: center;
+  font-size: 21px;
+  line-height: 29px;  
+  margin: 25px auto;
 }
-
-.curve::after {
-  content: '';
-  display: block;
-  position: absolute;
-  border-radius: 100% 50%;
-  width: 55%;
-  height: 100%;
-  background-color: #f5f8fc;
-  transform: translate(-4%, 40%);
-  z-index: -1;
+.introduction__col{
+  width: 33.33%;
+}
+.introduction__h3{
+  font-size: 26px;
+  line-height: 32px;
+  margin-bottom: 16px;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
