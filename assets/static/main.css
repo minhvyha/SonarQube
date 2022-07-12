@@ -316,9 +316,20 @@ figure > img{
   gap: 25px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 24px;
 }
 .languages-img{
   width: 115px;
+}
+.language-details-link{
+  border-radius: .5rem;
+  transition: all .2s ease;
+}
+.language-details-link:hover{
+  box-shadow: 0 0 0 3px #4c9bd6;
+}
+.languages-btn{
+  
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
