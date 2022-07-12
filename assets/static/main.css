@@ -117,7 +117,7 @@ section {
   margin-left: -66px;
 }
 
-/*=============== NAV Bar ===============*/
+/*=============== NAV BAR ===============*/
 .header {
   position: fixed;
   top: 0;
@@ -126,7 +126,7 @@ section {
   background-color: white;
   z-index: var(--z-fixed);
   transition: .4s;
-  
+  box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
 }
 .nav{
   padding: 14px;
@@ -136,6 +136,23 @@ section {
   max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
+}
+.nav__product{
+  transition: all .2s ease;
+  position: relative;
+}
+.nav__product:hover{
+  color: #4c9bd6;
+  outline: none;
+}
+.nav__product:hover::before{
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 2px;
+  background-color: #4c9bd6;
+  bottom: -31px;
+  left: -13px;
 }
 .nav__logo{
   padding: 6px 0;
