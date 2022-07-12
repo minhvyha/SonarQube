@@ -80,7 +80,7 @@ textarea {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: #f6f7fb;
   color: var(--text-color);
   transition: .4s; /* for light mode animation */
 
