@@ -545,6 +545,40 @@ figure > img{
   justify-content: flex-start;
   margin-left: 10px;
 }
+
+/*=============== RECOMMENDATION ===============*/
+.recommendation{
+  max-width: 1220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.recommendations{
+  margin-top: 3rem;
+}
+.recommendation__col{
+  display: flex;
+  flex-direction: column;
+  float: left;
+  max-width: 25%;
+  margin-left: 8.3333%;
+}
+.icon-recommendation{
+  width: 48px;
+  height: 48px;
+}
+.recommendation-security{
+  margin-bottom: 20px;
+}
+.recommendation__col h6{
+  font-size: 21px;
+  line-height: 26px;
+  height: 86px;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+.recommendation__p{
+  margin-bottom: 1.2rem;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
