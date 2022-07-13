@@ -167,7 +167,8 @@ section {
   width: 122px;
 }
 .nav__img{
-  width: 280px;
+  width: auto;
+  height: 40px;
 }
 .nav__list{
   display: inline-flex;
@@ -680,19 +681,170 @@ figure > img{
 }
 
 /*=============== FOTTER ===============*/
-footer{
+.footer{
   color: #ffffff;
   background-color: #0b3c62;
+  padding: 0;
 }
 .subscribe-container{
   background-color: rgba(7, 7, 6, 0.2);
-  padding: 24px;
+  padding: 32px;
+  width: 100%;
 }
 .subscribe-row{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  max-width: 1220px;
+  min-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscribe-info{
+  margin-left: 8.333%;
+  max-width: 41.666%;
+  padding: 0 8px;
+}
+.subscribe-info p {
+  margin-top: 8px;
+  font-size: 12px;
+  font-style: italic;
+
+}
+.subscribe-info h5{
+  font-size: 19px;
+  font-weight: bold;
+}
+.subscribe-input{
+  padding: 0 8px;
+  margin-left: 1rem;
+}
+.form-container{
+  display: flex;
+  flex-direction: row;
+  gap: .7rem;
+}
+.form-container div{
+  width: 320px;
+}
+.form-container div input{
+  margin: 0;
+  width: 100%;
+  height: 36px;
+  padding: 8px;
+  border: 1px solid #8a8c8f;
+  transition: all 0.2s ease;
+  color: #2d3032;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.subscribe-submit{
+  width: 150px;
+  height: 36px;
+  line-height: 32px;
+  padding: 0 8px;
+  font-size: 16px;
+  color: white;
+  background-color: #4c9bd6;
+  border: 1px solid #4c9bd6;
+  font-weight: 600;
+  border-radius: 3.2px;
+}
+.form-container input:focus{
+  border: 1.7px solid #4c9bd6;
+  box-shadow: 0 0 0pt 2pt #b9ddf8;
+  outline-style: none;
+}
+.footer-nav{
+  padding: 40px 0;
+}
+.footer-img{
+  height: 40px;
+}
+.footer-row{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.footer-col1{
+  display: flex;
+  gap: 3rem;
+  margin-right: 4rem;
+}
+.footer-logo{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+.page-footer-company{
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+
+}
+.page-footer-logo {
+  margin-top: -13px;
+}
+.page-footer-company a {
+  color: rgba(121, 198, 255, 0.7);
+  border-bottom: 1px solid rgba(76, 155, 214, 0.3);
+}
+.page-footer-social{
+  margin-top: .1rem;
+}
+.page-footer-social a{
+  color: #3e81b5;
+  transition: all .3s ease;
+}
+.page-footer-social a:hover{
+  color: #61baff;
+  
+}
+.footer-col{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+.footer-col h4{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+.footer-col li a{
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all .3s ease;
+}
+.footer-col li{
+  margin-bottom: .5rem;
+}
+.footer-col a:hover{
+  color: rgba(255, 255, 255, 1);
+
+}
+.page-footer-copyright{
+  background-color: rgba(7, 7, 6, 0.2);
+  padding: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .2rem;
+}
+.page-footer-copyright p {
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+a.policy--link {
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
