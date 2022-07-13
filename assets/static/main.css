@@ -587,6 +587,7 @@ figure > img{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 0;
+  padding-bottom: 170px;
 }
 .download-container{
   max-width: 1220px;
@@ -611,6 +612,87 @@ figure > img{
   max-width: 690px;
   font-size: 21px;
   line-height: 26px;
+  margin-bottom: 28px;
+}
+.download-row{
+  display: flex;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.download_col{
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.3rem;
+}
+.download-box{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-top: .6rem;
+}
+.download-box p {
+  text-align: left;
+}
+.download-box h2{
+  text-align: left;
+}
+.download-box span{
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #8a8c8f;
+  letter-spacing: 4px;
+  margin-top: .5rem;
+}
+.download-box p{
+  margin-top: 1rem;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 46px;
+}
+.download-box h3{
+  font-size: 26px;
+  line-height: 32px;
+}
+.special{
+  background-color: white;
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
+}
+.free-open-source{
+  color: #28a745;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+.nav__download.download__btn{
+  margin-top: 14px;
+  padding: 10px 16px;
+  width: fit-content;
+
+}
+.download-box .spacer-top-xs{
+  margin: 0;
+}
+
+/*=============== FOTTER ===============*/
+footer{
+  color: #ffffff;
+  background-color: #0b3c62;
+}
+.subscribe-container{
+  background-color: rgba(7, 7, 6, 0.2);
+  padding: 24px;
+}
+.subscribe-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
