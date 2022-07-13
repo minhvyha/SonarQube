@@ -138,21 +138,28 @@ section {
   margin-right: auto;
 }
 .nav__product{
-  transition: all .2s ease;
+  transition: all .3s ease;
   position: relative;
 }
-.nav__product:hover{
+
+.product:hover .nav__arrow, .product:hover .nav__product{
   color: #4c9bd6;
   outline: none;
 }
-.nav__product:hover::before{
+.nav__product::before{
   position: absolute;
   content: "";
-  width: 90px;
+  width: 0;
   height: 2px;
-  background-color: #4c9bd6;
-  bottom: -31px;
-  left: -13px;
+  background-color: rgba(76, 155, 214, 0);
+  bottom: -16px;
+  left: -5px;
+  transition: all .2s;
+}
+
+.product:hover .nav__product::before{
+  width: 90px;
+  background-color: rgba(76, 155, 214, 1);
 }
 .nav__logo{
   padding: 6px 0;
@@ -174,7 +181,103 @@ section {
   align-items: center;
   font-weight: 500;
 }
+.nav__arrow{
+  transition: all .2s ease;
+}
 
+ .nav__list li:hover .mega-box{
+  top: 65px;
+  opacity: 1;
+  visibility: visible;
+
+}
+#showMega{
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  margin: 0;
+}
+.mega-box{
+  background: white;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 85px;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0 2px 4px hsl(0deg 0% 1% / 35%);
+  transition: all 0.2s ease-in;
+}
+#showMega:checked ~ .mega-box{
+  max-height: 100%;
+}
+.mega-box .content{
+  max-width: 1160px;
+  padding: 25px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mega-box .content .row__nav{
+  width: calc(25% - 30px);
+  line-height: 45px;
+}
+.content .row__nav img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content .row__nav header{
+  display: flex;
+  align-items: center;
+  color: #2d3032;
+  font-size: 26px;
+  font-weight: 700;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.row__nav{
+  float: left;
+}
+.content{
+  max-width: 1160px;
+  
+}
+.content .row__nav .mega-links{
+  border-left: 1px solid rgba(255,255,255,0.09);
+}
+.row__nav .mega-links li a{
+  padding: 0px;
+  padding-left: 65px;
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(76, 155, 214);
+  transition: all .4s ease;
+  text-decoration: underline;
+  text-decoration-color: rgba(76, 155, 214, 0);
+}
+.row__nav .mega-links li a:hover{
+  color: #2d3032;
+  text-decoration-color: rgb(0, 0, 0);
+}
+.row__nav p{
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 10px;
+}
+.content .row__nav .sub__title{
+  font-size: 21px;
+  padding-bottom: 2px;
+}
+.row__nav .mega-links li .sub{
+  padding: 0;
+}
 
 /*=============== Title ===============*/
 .title{
@@ -220,7 +323,12 @@ section {
   font-size: 18px;
   font-weight: 500;
 }
-
+.nav__download, .title__button{
+  transition: all .3s ease;
+}
+.nav__download:hover, .title__button:hover{
+  background-color: #4ca5ea;
+}
 figure > img{
   width: 90%;
 }
@@ -284,14 +392,20 @@ figure > img{
   margin: -10px;
   font-size: 18px;
   line-height: 26px;
+  
 }
-.btn-nav:after{
-  content: " ";
-    background-image: url(https://www.sonarqube.org/images/ui/arrows.svg);
-    background-position: 4px -2px;
-    padding-right: 34px;
-    background-size: 24px;
-    background-repeat: no-repeat;
+.spacer-top-xs, .languages-btn{
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  
+}  
+.spacer-top-xs:hover .intro__icon, .languages-btn:hover .intro__icon{
+  transform: translateX(.25rem);
+}
+.intro__icon{
+  width: 24px;
+  transition: all .3s ease;
 }
 .spacer-top-xs{
   margin-top: 10px;
@@ -314,7 +428,7 @@ figure > img{
   max-width: 1220px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 140px;
+  margin-bottom: 40px;
 }
 .languages__intro{
   margin-left: auto;
