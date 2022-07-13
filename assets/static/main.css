@@ -551,6 +551,7 @@ figure > img{
   max-width: 1220px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 6rem;
 }
 .recommendations{
   margin-top: 3rem;
@@ -578,6 +579,38 @@ figure > img{
 }
 .recommendation__p{
   margin-bottom: 1.2rem;
+}
+
+/*=============== DOWNLOAD ===============*/
+.download{
+  background-image: url(/assets/img/download.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+}
+.download-container{
+  max-width: 1220px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.download-container h2{
+  text-align: center;
+  font-size: 36px;
+  line-height: 46px;
+  max-width: 670px;
+  font-weight: 700;
+
+}
+.download-container p {
+  text-align: center;
+  margin: 24px auto;
+  max-width: 690px;
+  font-size: 21px;
+  line-height: 26px;
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
