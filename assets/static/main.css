@@ -556,6 +556,7 @@ figure > img{
 }
 .recommendations{
   margin-top: 3rem;
+  justify-content: center;
 }
 .recommendation__col{
   display: flex;
@@ -620,6 +621,7 @@ figure > img{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 2.2rem;
 }
 .download_col{
   padding: 30px;
@@ -862,13 +864,52 @@ a.policy--link {
 }
 
 @media screen and (min-width: 767px) {
-
+  .subscribe-row{
+    flex-direction: column;
+    min-width: auto;
+    align-items: flex-start;
+    padding-left: 2rem;
+    gap: 1.2rem;
+  }
+  .subscribe-input, .subscribe-info{
+    margin-left: 0;
+    max-width: fit-content;
+  }
+  .download-row{
+    flex-direction: column;
+  }
 }
 /* For large devices */
 @media screen and (min-width:992px) {
-
-}
-
-@media screen and (min-width:1300px) {
-  
+  .footer-row{
+    gap: 1rem;
+  }
+  .footer-col1{
+    margin-right: 1.5rem;
+  }
+  .footer-col{
+    padding: 0 8px;
+  }
+  .subscribe-info h5{
+    font-size: 16px;
+  }
+  .form-container div {
+    width: 225px;
+  }
+  .recommendation__col{
+    margin-left: 7.3333%;
+  }
+  .introduction__p{
+    font-size: 16px;
+  }
+  .recommendation__col{
+    max-width: 23%;
+  }
+  .work__btn .btn-nav{
+    font-size: 14px;
+    padding: 3px;
+  }
+  .work__row2{
+    margin-left: -16px;
+  }
 }
