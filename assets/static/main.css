@@ -851,10 +851,188 @@ a.policy--link {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 
-@media screen and (max-width:366px){
-  
+@media screen and (max-width:454px){
+  .subscribe-row{
+    flex-direction: column;
+    min-width: auto;
+    gap: 1rem;
+  }
+  .subscribe-info{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .subscribe-info h5{
+    font-size: 17px;
+  }
+  .subscribe-info p{
+    font-size: 11px;
+  }
+  .subscribe-input{
+    padding: 0;
+  }
+  .form-container{
+    flex-direction: column;
+  }
+  .form-container div input{
+    width: 200px;
+  }
+  .subscribe-input{
+    width: 100%;
+    margin: 0;
+  }
+  .download-row{
+    flex-direction: column;
+  }
+  .footer-row{
+    flex-direction: column;
+  }
+  .footer-col1{
+    margin-right: 0;
+    gap: 1rem;
+  }
+  .footer-col{
+    padding: 0;
+  }
+  .page-footer-copyright{
+    gap: 1rem;
+  }
+  .download_col{
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
+    margin: 0;
+  }
+  .download-container h2{
+    font-size: 28px;
+    margin: 0 1.5rem;
+    line-height: 2.2rem;
+  }
+  .download-container p{
+    margin: 1.5rem;
+    font-size: 17px;
+  }
+  .download-box .spacer-top-s{
+    margin: 1rem 0;
+  }
+  .nav__download.download__btn{
+    font-size: 16px;
+  }
+  .row.recommendations{
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .recommendation__col{
+    max-width: 100%;
+    margin: 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px hsl(0deg 0% 1% / 35%);
+    margin: 0;
+    padding: 1rem 2rem;
+  }
+  .recommendation__col h6{
+    text-align: center;
+    margin-top: .7rem;
+    font-size: 18px;
+
+  }
+  .recommendation__p{
+    font-size: 13px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .introduction__title{
+    font-size: 32px;
+  }
+  .no-gutters, .col-2{
+    flex-direction: column;
+  }
+  .col-1 h2, .col-1 p{
+    text-align: center;
+  }
+  .col-1 p{
+    font-size: 17px;
+  }
+  .intro-row{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .languages-img{
+    width: 80px;
+  }
+  .languages-btn{
+    align-items: center;
+    justify-content: center;
+  }
+  .work{
+    padding: 0 2rem;
+  }
+  .col-1, .col-2{
+    margin: 0;
+  }
+  .no-gutter{
+    padding: 18px;
+    margin: 0;
+    width: 100%;
+    margin-bottom: 1.8rem;
+  }
+  .work__box{
+    text-align: center;
+  }
+  .work__row2{
+    justify-content: center;
+  }
+  .title__h1{
+    font-size: 40px;
+  }
+  .title__span{
+    font-size: 24px;
+  }
+  .intro{
+    font-size: 18px;
+  }
+  .title__button__container{
+    margin: 2rem 0;
+  }
+  .introduction__title{
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .introduction__col{
+    width: 100%;
+    padding: 0;
+    padding-left: 2rem;
+  }
+  .introduction__text{
+    font-size: 16px;
+  }
+  .intro-text{
+    font-size: 14px;
+  }
+  .row.introduction{
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction__h3{
+    font-size: 22px;
+  }
+  .icon{
+    width: 40px;
+    margin-top: -2px;
+    margin-left: -50px;
+  }
+  .introduction__p{
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .introduction__col{
+    margin-top: 4rem;
+  }
 }
-@media screen and (min-width: 455px) and (max-width: 699px){
+@media screen and (min-width:454px) and (max-width: 699px){
   .title__h1{
     font-size: 50px;
     line-height: 4rem;
@@ -941,22 +1119,37 @@ a.policy--link {
   }
   .download-row{
     flex-direction: column;
+    align-items: center;
   }
   .download_col{
     background-color: white;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
+    margin: 0;
+    width: 80%;
+
   }
   .download-box p{
     margin: 28px 0;
+    margin-left: 0;
+    margin-right: 0;
   }
-  .download-container h2, .download-container p{
+  .download-row{
+    margin-top: 1rem;
+  }
+  .download-container .download-sub{
+    margin: 2rem;
+  }
+  .download-container h2{
     margin-left: 2rem;
     margin-right: 2rem;
   }
   .recommendations{
     flex-direction: column;
     margin: 0 2rem;
+  }
+  .recommendation{
+    margin-bottom: 3rem;
   }
   .recommendation .introduction__title{
     margin-bottom: 1rem;
@@ -967,8 +1160,40 @@ a.policy--link {
   .recommendation__col{
     margin: 0;
     max-width: 80%;
-    margin: 1rem 0;
+    margin: 2rem 0;
     margin-left: 1rem;
+  }
+  .subscribe-row{
+    flex-direction: column;
+    min-width: auto;
+  }
+  .form-container div{
+    width: auto;
+  }
+  .subscribe-info{
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.4rem;
+  }
+  .subscribe-row{
+    align-items: flex-start;
+  }
+  .footer-row{
+    flex-direction: column;
+  }
+  .footer-col{
+    padding: 0;
+  }
+  .page-footer-copyright{
+    gap: .5rem;
+  }
+  .subscribe-input{
+    margin: 0;
+    padding: 0;
+  }
+  .form-container div input{
+    width: 210px;
   }
   .recommendation__col h6{
     height: auto;
