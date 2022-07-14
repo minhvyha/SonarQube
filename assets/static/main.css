@@ -138,7 +138,9 @@ section {
   transition: all .3s ease;
   position: relative;
 }
-
+.last__nav{
+  display: none;
+}
 .product:hover .nav__arrow, .product:hover .nav__product{
   color: #4c9bd6;
   outline: none;
@@ -184,7 +186,28 @@ section {
 .nav__arrow{
   transition: all .2s ease;
 }
-
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+label.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.fa-bars{
+  color: black;
+}
  .nav__list li:hover .mega-box{
   top: 65px;
   opacity: 1;
@@ -208,6 +231,7 @@ section {
   box-shadow: 0 2px 4px hsl(0deg 0% 1% / 35%);
   transition: all 0.2s ease-in;
 }
+
 #showMega:checked ~ .mega-box{
   max-height: 100%;
 }
@@ -1031,12 +1055,62 @@ a.policy--link {
   .introduction__col{
     margin-top: 4rem;
   }
+  .checkbtn{
+    display: block;
+  }
+  .nav__list{
+    position: fixed;
+      width: 100%;
+      height: fit-content;
+      background: white;
+      top: 68px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      flex-direction: column;
+      box-shadow: 0px 50px 50px -17px rgba(0,0,0,0.51);
+  }
+  nav .nav__list li{
+    line-height: 30px;
+  }
+  .nav a:last-child {
+    margin-left: 0;
+   }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .checkbtn{
+    position: absolute;
+    top: 0px;
+    right: -1px;
+  }
+  .outside{
+    display: none;
+  }
+  .nav__item{
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
 }
 @media screen and (min-width:454px) and (max-width: 699px){
   .title__h1{
     font-size: 50px;
     line-height: 4rem;
     margin-bottom: 1rem;
+  }
+  .outside{
+    display: none;
+  }
+  .checkbtn{
+    position: absolute;
+    top: 0px;
+    right: -1px;
+  }
+  .last__nav{
+    display: block;
   }
   .intro{
     font-size: 18px;
@@ -1198,6 +1272,95 @@ a.policy--link {
   .recommendation__col h6{
     height: auto;
     margin-bottom: .5rem;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .nav__list{
+    position: fixed;
+      width: 100%;
+      height: fit-content;
+      background: white;
+      top: 69px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      flex-direction: column;
+      box-shadow: 0px 50px 50px -17px rgba(0,0,0,0.51);
+  }
+  nav .nav__list li{
+    line-height: 30px;
+  }
+  .nav a:last-child {
+    margin-left: 0;
+   }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .nav__item{
+    border-bottom: 1px solid #eaeaea;
+    display: flex;
+    justify-content:flex-start ;
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  .nav__item a{
+    font-size: 20px;
+  }
+  .last__nav{
+    border-bottom: none;
+  }
+  .content{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .first-row-nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: .4rem;
+  }
+  .first-row-nav div:last-child{
+    margin-left: auto;
+    right: 0;
+  }
+  .content .row__nav .sub__title {
+    font-size: 16px;
+    padding-bottom: 2px;
+}
+
+  .mega-box .content .row__nav {
+    width: 50%;
+    padding-right: 2rem;
+}
+.mega-box .content .first-row-nav {
+  width: 100%;
+  line-height: 45px;
+  padding-right: 0;
+}
+  .row__nav p {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .row__nav .mega-links li a{
+    font-size: 12px;
+  }
+  .content .row__nav header {
+    display: flex;
+    align-items: center;
+    color: #2d3032;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+    gap: 0px;
+    width: fit-content;
+
+  }
+  .row__nav .mega-links li a {
+    padding: 0px;
+    text-align: left;
   }
 }
 

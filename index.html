@@ -13,7 +13,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/static/main.css">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
         <title>Code Quality and Code Security | SonarQube</title>
     </head>
     <body id="body">
@@ -24,45 +24,56 @@
         <header class="header" id="header">
             
             <nav class="nav container">
+                    <input class="checkbtn" type="checkbox" id="check">
+                    <label for="check" class="checkbtn">
+                        <i class="fas fa-bars"></i>
+                      </label>
+                
                 <a href="/" class="nav__logo"><img class="nav__img" src="https://www.sonarqube.org/assets/logo-31ad3115b1b4b120f3d1efd63e6b13ac9f1f89437f0cf6881cc4d8b5603a52b4.svg" alt=""></a>
                 <ul class="nav__list">
                     <li class="nav__item product">
                         <a class="nav__product">Products</a>
                         <input type="checkbox" id="showMega">
+                        
                         <svg class="nav__arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="12px" height="12px">
                             <path fill="currentColor" d="M6 8.9c-.3 0-.5-.1-.7-.3L1.4 4.7c-.4-.3-.4-1 0-1.4s1-.4 1.4 0L6 6.5l3.2-3.2c.4-.4 1-.4 1.4 0s.4 1 0 1.4l-3.9 4c-.2.1-.4.2-.7.2z"></path>
                         </svg>
                         
                         <div class="mega-box">
                           <div class="content">
-                            <div class="row__nav">
-                              <header>
-                                <svg id="Calque_6" data-name="Calque 6" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#4c9bd6;}.cls-2{fill:#174f7b;}</style></defs><title>bug</title><path class="cls-1" d="M8,12.53a.5.5,0,0,0-.5-.5H4.5a.5.5,0,0,0-.5.5.51.51,0,0,0,.5.5h3A.51.51,0,0,0,8,12.53Z"></path><path class="cls-1" d="M19.58,12H16.47a.5.5,0,0,0-.5.5.5.5,0,0,0,.5.5h3.11a.51.51,0,0,0,.5-.5A.5.5,0,0,0,19.58,12Z"></path><path class="cls-1" d="M13.81,5.57l.5-.73a.5.5,0,0,0-.83-.57l-.85,1.24H11.28l-.85-1.24a.52.52,0,0,0-.7-.13.51.51,0,0,0-.13.7l.53.76A2.14,2.14,0,0,0,8.56,7.66V9.32a.5.5,0,0,0,.5.5.5.5,0,0,0,.5-.5V7.66A1.15,1.15,0,0,1,10.7,6.51h2.63a1.2,1.2,0,0,1,1.19,1.2V9.32a.5.5,0,0,0,1,0V7.71A2.2,2.2,0,0,0,13.81,5.57Z"></path><path class="cls-1" d="M7.44,14.06A2.71,2.71,0,0,0,5,17v.56a.5.5,0,0,0,1,0V17a1.76,1.76,0,0,1,1.57-1.91A.48.48,0,0,0,8,14.51.5.5,0,0,0,7.44,14.06Z"></path><path class="cls-1" d="M16.57,14.06a.51.51,0,0,0-.55.45.5.5,0,0,0,.46.54A1.76,1.76,0,0,1,18,17v.56a.5.5,0,0,0,.5.5.5.5,0,0,0,.5-.5V17A2.71,2.71,0,0,0,16.57,14.06Z"></path><path class="cls-1" d="M7.53,10.25C6,10.09,6,8.38,6,8.17v-.6a.5.5,0,0,0-1,0v.58a2.83,2.83,0,0,0,2.48,3.09h0A.5.5,0,0,0,8,10.79.49.49,0,0,0,7.53,10.25Z"></path><path class="cls-1" d="M16.52,11.25h.05A2.82,2.82,0,0,0,19,8.17v-.6a.5.5,0,0,0-.5-.5.5.5,0,0,0-.5.5v.62c0,.07.06,1.9-1.57,2.06a.5.5,0,0,0-.45.54A.52.52,0,0,0,16.52,11.25Z"></path><path class="cls-2" d="M15.48,9H8.6a1.5,1.5,0,0,0-1.5,1.5V15a5,5,0,0,0,5,5A4.88,4.88,0,0,0,17,15.15V10.51A1.5,1.5,0,0,0,15.48,9Zm.5,6.14A3.88,3.88,0,0,1,12.1,19a4,4,0,0,1-4-4V10.51a.5.5,0,0,1,.5-.5h2.89v5a.5.5,0,0,0,.5.5.5.5,0,0,0,.5-.5V10h3a.5.5,0,0,1,.5.5Z"></path></svg>
-                                Code Quality
-                            </header>
-                              <ul class="mega-links">
-                                  <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">Release Quality Code</a></li>
-                                  <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">Maintainability</a></li>
-                              </ul>
-              
-                              <header>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
-                                    <g id="Groupe_8015" data-name="Groupe 8015" transform="translate(-162 -272)">
-                                      <rect id="Rectangle_11520" data-name="Rectangle 11520" width="48" height="48" transform="translate(162 272)" fill="#fff" opacity="0"></rect>
-                                      <g id="shield" transform="translate(171.019 279.078)">
-                                        <path id="Tracé_13120" data-name="Tracé 13120" d="M29.269,9.336V9.309c-.015-.331-.025-.68-.031-1.069A3.647,3.647,0,0,0,25.8,4.667,14.152,14.152,0,0,1,16.171.607L16.149.586a2.2,2.2,0,0,0-2.993,0l-.022.021A14.154,14.154,0,0,1,3.5,4.667,3.647,3.647,0,0,0,.067,8.24c-.006.386-.016.736-.031,1.069l0,.062c-.077,4.034-.172,9.056,1.507,13.613A17.329,17.329,0,0,0,5.7,29.46a21.748,21.748,0,0,0,8.136,4.812,2.516,2.516,0,0,0,.333.091,2.463,2.463,0,0,0,.968,0,2.518,2.518,0,0,0,.335-.091A21.761,21.761,0,0,0,23.6,29.457a17.354,17.354,0,0,0,4.157-6.477C29.441,18.408,29.346,13.378,29.269,9.336ZM25.861,22.281c-1.772,4.8-5.388,8.1-11.056,10.084a.519.519,0,0,1-.064.017.454.454,0,0,1-.177,0,.511.511,0,0,1-.064-.017C8.826,30.387,5.207,27.09,3.437,22.286c-1.548-4.2-1.461-8.81-1.383-12.876V9.387c.016-.349.026-.715.032-1.118A1.621,1.621,0,0,1,3.614,6.683,17.717,17.717,0,0,0,9.627,5.36a15.732,15.732,0,0,0,4.9-3.292.186.186,0,0,1,.25,0,15.738,15.738,0,0,0,4.9,3.292,17.717,17.717,0,0,0,6.013,1.323A1.621,1.621,0,0,1,27.219,8.27c.006.4.017.77.032,1.117C27.328,13.458,27.414,18.071,25.861,22.281Zm0,0" transform="translate(0)" fill="#4c9bd6"></path>
-                                        <path id="Tracé_13121" data-name="Tracé 13121" d="M98.974,128.41a8.576,8.576,0,1,0,8.576,8.576A8.586,8.586,0,0,0,98.974,128.41Zm0,15.133a6.557,6.557,0,1,1,6.556-6.557A6.564,6.564,0,0,1,98.974,143.543Zm0,0" transform="translate(-84.323 -119.781)" fill="#174f7b"></path>
-                                        <path id="Tracé_13122" data-name="Tracé 13122" d="M160.461,212.287l-3.983,3.983-1.081-1.081a1.01,1.01,0,1,0-1.428,1.428l1.8,1.8a1.01,1.01,0,0,0,1.428,0l4.7-4.7a1.01,1.01,0,0,0-1.428-1.428Zm0,0" transform="translate(-143.344 -197.744)" fill="#174f7b"></path>
-                                      </g>
-                                    </g>
-                                  </svg>
-                                Code Security
-                                
-                            </header>
-                              <ul class="mega-links">
-                                  <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">Security Analysis</a></li>
-                                  <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">OWASP Top 10</a></li>
-                              </ul>
+                            <div class="row__nav first-row-nav">
+                                <div class="content-nav-product">
+                                    <header>
+                                        <svg id="Calque_6" data-name="Calque 6" xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 24 24"><defs><style>.cls-1{fill:#4c9bd6;}.cls-2{fill:#174f7b;}</style></defs><title>bug</title><path class="cls-1" d="M8,12.53a.5.5,0,0,0-.5-.5H4.5a.5.5,0,0,0-.5.5.51.51,0,0,0,.5.5h3A.51.51,0,0,0,8,12.53Z"></path><path class="cls-1" d="M19.58,12H16.47a.5.5,0,0,0-.5.5.5.5,0,0,0,.5.5h3.11a.51.51,0,0,0,.5-.5A.5.5,0,0,0,19.58,12Z"></path><path class="cls-1" d="M13.81,5.57l.5-.73a.5.5,0,0,0-.83-.57l-.85,1.24H11.28l-.85-1.24a.52.52,0,0,0-.7-.13.51.51,0,0,0-.13.7l.53.76A2.14,2.14,0,0,0,8.56,7.66V9.32a.5.5,0,0,0,.5.5.5.5,0,0,0,.5-.5V7.66A1.15,1.15,0,0,1,10.7,6.51h2.63a1.2,1.2,0,0,1,1.19,1.2V9.32a.5.5,0,0,0,1,0V7.71A2.2,2.2,0,0,0,13.81,5.57Z"></path><path class="cls-1" d="M7.44,14.06A2.71,2.71,0,0,0,5,17v.56a.5.5,0,0,0,1,0V17a1.76,1.76,0,0,1,1.57-1.91A.48.48,0,0,0,8,14.51.5.5,0,0,0,7.44,14.06Z"></path><path class="cls-1" d="M16.57,14.06a.51.51,0,0,0-.55.45.5.5,0,0,0,.46.54A1.76,1.76,0,0,1,18,17v.56a.5.5,0,0,0,.5.5.5.5,0,0,0,.5-.5V17A2.71,2.71,0,0,0,16.57,14.06Z"></path><path class="cls-1" d="M7.53,10.25C6,10.09,6,8.38,6,8.17v-.6a.5.5,0,0,0-1,0v.58a2.83,2.83,0,0,0,2.48,3.09h0A.5.5,0,0,0,8,10.79.49.49,0,0,0,7.53,10.25Z"></path><path class="cls-1" d="M16.52,11.25h.05A2.82,2.82,0,0,0,19,8.17v-.6a.5.5,0,0,0-.5-.5.5.5,0,0,0-.5.5v.62c0,.07.06,1.9-1.57,2.06a.5.5,0,0,0-.45.54A.52.52,0,0,0,16.52,11.25Z"></path><path class="cls-2" d="M15.48,9H8.6a1.5,1.5,0,0,0-1.5,1.5V15a5,5,0,0,0,5,5A4.88,4.88,0,0,0,17,15.15V10.51A1.5,1.5,0,0,0,15.48,9Zm.5,6.14A3.88,3.88,0,0,1,12.1,19a4,4,0,0,1-4-4V10.51a.5.5,0,0,1,.5-.5h2.89v5a.5.5,0,0,0,.5.5.5.5,0,0,0,.5-.5V10h3a.5.5,0,0,1,.5.5Z"></path></svg>
+                                        Code Quality
+                                    </header>
+                                      <ul class="mega-links">
+                                          <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">Release Quality Code</a></li>
+                                          <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">Maintainability</a></li>
+                                      </ul>
+                                </div>
+                              
+                                <div class="content-nav-product">
+                                    <header>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                            <g id="Groupe_8015" data-name="Groupe 8015" transform="translate(-162 -272)">
+                                              <rect id="Rectangle_11520" data-name="Rectangle 11520" width="48" height="48" transform="translate(162 272)" fill="#fff" opacity="0"></rect>
+                                              <g id="shield" transform="translate(171.019 279.078)">
+                                                <path id="Tracé_13120" data-name="Tracé 13120" d="M29.269,9.336V9.309c-.015-.331-.025-.68-.031-1.069A3.647,3.647,0,0,0,25.8,4.667,14.152,14.152,0,0,1,16.171.607L16.149.586a2.2,2.2,0,0,0-2.993,0l-.022.021A14.154,14.154,0,0,1,3.5,4.667,3.647,3.647,0,0,0,.067,8.24c-.006.386-.016.736-.031,1.069l0,.062c-.077,4.034-.172,9.056,1.507,13.613A17.329,17.329,0,0,0,5.7,29.46a21.748,21.748,0,0,0,8.136,4.812,2.516,2.516,0,0,0,.333.091,2.463,2.463,0,0,0,.968,0,2.518,2.518,0,0,0,.335-.091A21.761,21.761,0,0,0,23.6,29.457a17.354,17.354,0,0,0,4.157-6.477C29.441,18.408,29.346,13.378,29.269,9.336ZM25.861,22.281c-1.772,4.8-5.388,8.1-11.056,10.084a.519.519,0,0,1-.064.017.454.454,0,0,1-.177,0,.511.511,0,0,1-.064-.017C8.826,30.387,5.207,27.09,3.437,22.286c-1.548-4.2-1.461-8.81-1.383-12.876V9.387c.016-.349.026-.715.032-1.118A1.621,1.621,0,0,1,3.614,6.683,17.717,17.717,0,0,0,9.627,5.36a15.732,15.732,0,0,0,4.9-3.292.186.186,0,0,1,.25,0,15.738,15.738,0,0,0,4.9,3.292,17.717,17.717,0,0,0,6.013,1.323A1.621,1.621,0,0,1,27.219,8.27c.006.4.017.77.032,1.117C27.328,13.458,27.414,18.071,25.861,22.281Zm0,0" transform="translate(0)" fill="#4c9bd6"></path>
+                                                <path id="Tracé_13121" data-name="Tracé 13121" d="M98.974,128.41a8.576,8.576,0,1,0,8.576,8.576A8.586,8.586,0,0,0,98.974,128.41Zm0,15.133a6.557,6.557,0,1,1,6.556-6.557A6.564,6.564,0,0,1,98.974,143.543Zm0,0" transform="translate(-84.323 -119.781)" fill="#174f7b"></path>
+                                                <path id="Tracé_13122" data-name="Tracé 13122" d="M160.461,212.287l-3.983,3.983-1.081-1.081a1.01,1.01,0,1,0-1.428,1.428l1.8,1.8a1.01,1.01,0,0,0,1.428,0l4.7-4.7a1.01,1.01,0,0,0-1.428-1.428Zm0,0" transform="translate(-143.344 -197.744)" fill="#174f7b"></path>
+                                              </g>
+                                            </g>
+                                          </svg>
+                                        Code Security
+                                        
+                                    </header>
+                                      <ul class="mega-links">
+                                          <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">Security Analysis</a></li>
+                                          <li><a class="nav__link" href="https://www.sonarqube.org/features/quality-gate/">OWASP Top 10</a></li>
+                                      </ul>
+                                </div>
+                              
                             </div>
                             <div class="row__nav">
                               <header class="sub__title">Benefits</header>
@@ -98,8 +109,11 @@
                     <li class="nav__item">
                         <a href="https://www.sonarqube.org/community/">Community</a>
                     </li>
+                    <li class="nav__item last__nav">
+                        <a class='nav__download' href="https://www.sonarqube.org/downloads/">Download</a>
+                    </li>
                 </ul>
-                <a class='nav__download' href="https://www.sonarqube.org/downloads/">Download</a>
+                <a class='nav__download outside' href="https://www.sonarqube.org/downloads/">Download</a>
             </nav>
         </header>
 
