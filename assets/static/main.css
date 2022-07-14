@@ -654,7 +654,7 @@ figure > img{
   padding: 30px;
   display: flex;
   flex-direction: column;
-  margin-right: 2.3rem;
+  margin-right: .5rem;
   background-color: white;
   border-radius: 0.5rem;
   box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
