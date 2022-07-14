@@ -124,6 +124,7 @@ section {
   z-index: var(--z-fixed);
   transition: .4s;
   box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
+  max-width: 100%;
 }
 .nav{
   padding: 14px;
@@ -166,7 +167,9 @@ section {
   width: 162px;
   margin-top: -7px;
 }
-
+.inside{
+  display: none;
+}
 .nav__img{
   width: auto;
   height: 40px;
@@ -414,7 +417,7 @@ figure > img{
   border-bottom: none !important;
   padding: 10px;
   margin: -10px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   
 }
@@ -645,13 +648,16 @@ figure > img{
   margin-left: auto;
   margin-right: auto;
   padding: 0 2.2rem;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 .download_col{
   padding: 30px;
   display: flex;
   flex-direction: column;
   margin-right: 2.3rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px hsl(0deg 0% 1% / 15%);
 }
 .download-box{
   display: flex;
@@ -783,7 +789,7 @@ figure > img{
   outline-style: none;
 }
 .footer-nav{
-  padding: 40px 0;
+  padding: 40px 40px;
 }
 .footer-img{
   height: 40px;
@@ -874,8 +880,17 @@ a.policy--link {
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
-@media screen and (max-width:454px){
+@media screen and (max-width:320px){
+  .nav.container .checkbtn{
+    right: 4rem;
+  }
+}
+@media screen and (min-width: 321px) and (max-width:370px){
+  .nav.container .checkbtn{
+    right: 0rem;
+  }
+}
+@media screen and (max-width:453px){
   .subscribe-row{
     flex-direction: column;
     min-width: auto;
@@ -1094,12 +1109,75 @@ a.policy--link {
     align-items: center;
     padding: 1.5rem 0;
   }
+  .inside{
+    display: block;
+  }
+  .content{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .first-row-nav{
+    display: flex;
+    flex-direction: row;
+  }
+  .mega-box .content .row__nav.first-row-nav {
+    width: 100%;
+    line-height: 45px;
+  }
+  .mega-box .content .row__nav {
+    width: 48%;
+    line-height: 45px;
+  }
+  .content .row__nav header {
+    display: flex;
+    align-items: center;
+    color: #2d3032;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 0;
+    gap: 8px;
+  }
+  .row__nav p {
+    text-align: left;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  .row__nav .mega-links li a{
+    font-size: 12px;
+  }
+  .content .row__nav header {
+    display: flex;
+    align-items: center;
+    color: #2d3032;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 0;
+    gap: 0px;
+    width: fit-content;
+
+  }
+  .row__nav .mega-links li a {
+    padding: 0px;
+    text-align: left;
+  }
 }
 @media screen and (min-width:454px) and (max-width: 699px){
   .title__h1{
     font-size: 50px;
     line-height: 4rem;
     margin-bottom: 1rem;
+  }
+  .row__nav.last_row_nav .sub__title{
+    justify-content: flex-end;
+    margin: 0;
+    width: auto;
+  }
+  .row__nav.last_row_nav p{
+    text-align: right;
+  }
+
+  .inside{
+    display: block;
   }
   .outside{
     display: none;
@@ -1358,14 +1436,45 @@ a.policy--link {
     width: fit-content;
 
   }
-  .row__nav .mega-links li a {
-    padding: 0px;
+  .row__nav .mega-links li a{
+    padding: 0;
     text-align: left;
+  }
+  .row__nav.last_row_nav .mega-links li a {
+    padding: 0px;
+    text-align: right;
   }
 }
 
 /* For medium devices */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) and (max-width: 991px){
+  .nav__list li:hover .mega-box{
+    top: 68.5px;
+  
+  }
+  .nav__product::before{
+    bottom: -21px;
+  }
+  .nav__img{
+    height: 30px;
+  }
+  .nav__list{
+    padding-left: 0px;
+  }
+  .nav__item{
+    padding: 8px;
+    width: fit-content;
+  }
+  .content{
+    gap: .3rem;
+  }
+  .mega-box .content .row__nav {
+    width: 30%;
+    line-height: 45px;
+  }
+  .nav__item a{
+    font-size: 14px;
+  }
   .languages-img{
     width: 80px;
   }
@@ -1492,50 +1601,5 @@ a.policy--link {
   }
 }
 /* For large devices */
-@media screen and (min-width:992px) {
-  .footer-row{
-    gap: .8rem;
-  }
-  .footer-col1{
-    margin-right: 1.5rem;
-  }
-  .footer-col{
-    padding: 0 8px;
-  }
-  .subscribe-row{
-    flex-direction: row;
-  }
-  .subscribe-input, .subscribe-info{
-    margin-left: 0;
-    max-width: fit-content;
-  }
-  .subscribe-info h5{
-    font-size: 16px;
-  }
-  .download-row{
-    flex-direction: row;
-    width: auto;
-  }
-  .form-container div {
-    width: 225px;
-  }
-  .recommendation__col{
-    margin-left: 7.3333%;
-  }
-  .introduction__p{
-    font-size: 16px;
-  }
-  .recommendation__col{
-    max-width: 23%;
-  }
-  .work__btn .btn-nav{
-    font-size: 14px;
-    padding: 3px;
-  }
-  .work__row2{
-    margin-left: -16px;
-  }
-  .languages-img {
-    width: 115px;
-  }
+
 }
