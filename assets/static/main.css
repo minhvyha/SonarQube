@@ -885,10 +885,40 @@ a.policy--link {
   .nav.container .checkbtn{
     right: 4rem;
   }
+  .content .row__nav .content-nav-product header {
+    font-size: 14px;
+
+  } 
+  .content .row__nav .content-nav-product svg {
+    width: 32px;
+
+  } 
+  .row__nav.first-row-nav{
+    gap: 1rem;
+  }
+  .content .row__nav .sub__title {
+    font-size: 14px;
+  }
+  .mega-box .content {
+    max-width: 1160px;
+    padding: 25px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .product .mega-box .content .row__nav {
+    width: 43%;
+    line-height: 45px;
+  }
 }
 @media screen and (min-width: 321px) and (max-width:370px){
   .nav.container .checkbtn{
     right: 0rem;
+  }
+  .content .row__nav .sub__title {
+    font-size: 14px;
   }
 }
 @media screen and (max-width:453px){
