@@ -1,7 +1,7 @@
 # SonarQube
 ## [Watch it on youtube](https://youtu.be/KszK9iX0dAI)
 ## [Live Demo](https://google-search-minhvyha.netlify.app/)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/75df0e47-e1aa-41fb-9211-f86a3e3cbac5/deploy-status)](https://app.netlify.com/sites/google-search-minhvyha/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bb0d9fcf-cb44-40f1-a1d8-852310a1f81e/deploy-status)](https://app.netlify.com/sites/sonarqube/deploys)
 
 
 
@@ -16,10 +16,10 @@
 - Web development
 
 ### About this project
-I have started a new journey with CS50W, a course from Harvard University. This course covers database design, scalability, security, user experience and fundamentals of web design. This course evaluates your skills through hands-on projects to help you gain experience writing and using APIs, create interactive UIs, and leverage cloud services like GitHub and Heroku.
+\
+This is a clone page of an open-source platform, SonarQube. This clone is a part of the test task in my interview with 'Project Flux'. 
 \
 \
-Students will need to use HTML, CSS and JavaScript to make the frontend and use Python with Django and SQL for the backend. This course also introduces essential tools for developers like Git, user interfaces, testing, CI/CD, scalability and security
-\
-\
+My test task is to hypothetically lead a team of 5 junior developers to replicate 100% SonarQube. My part is to design and replicate the main website of SonarQube. I made this responsive with all type of devices.
+
 ![preview img](/preview.png)
