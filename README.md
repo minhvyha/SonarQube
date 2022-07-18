@@ -1,6 +1,6 @@
 # SonarQube
 ## [Watch it on youtube](https://youtu.be/KszK9iX0dAI)
-## [Live Demo](https://google-search-minhvyha.netlify.app/)
+## [Live Demo](https://sonarqube.netlify.app/)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bb0d9fcf-cb44-40f1-a1d8-852310a1f81e/deploy-status)](https://app.netlify.com/sites/sonarqube/deploys)
 
 
